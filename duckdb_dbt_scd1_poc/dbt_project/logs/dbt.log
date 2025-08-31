@@ -2844,3 +2844,56 @@ alter table "duck_poc"."main"."sales_with_customer__dbt_tmp" rename to "sales_wi
 [0m14:46:42.387068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A05144770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A0629E600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A0629C440>]}
 [0m14:46:42.388068 [debug] [MainThread]: Flushing usage events
 [0m14:46:42.539666 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:49:59.199618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244B9EAAF60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244B9E759A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244B9E77B30>]}
+
+
+============================== 14:49:59.199618 | 60f5f197-90f0-4eb4-996b-bae756e5316b ==============================
+[0m14:49:59.199618 [info ] [MainThread]: Running with dbt=1.10.10
+[0m14:49:59.199618 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\thesy\\Desktop\\duckdb_dbt_poc\\duckdb_dbt_scd1_poc\\dbt_project', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt debug', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'empty': 'None', 'log_path': 'C:\\Users\\thesy\\Desktop\\duckdb_dbt_poc\\duckdb_dbt_scd1_poc\\dbt_project\\logs', 'indirect_selection': 'eager', 'write_json': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m14:49:59.218478 [info ] [MainThread]: dbt version: 1.10.10
+[0m14:49:59.219477 [info ] [MainThread]: python version: 3.12.9
+[0m14:49:59.219477 [info ] [MainThread]: python path: C:\Users\thesy\.conda\envs\TheAlamo\python.exe
+[0m14:49:59.219477 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m14:49:59.285154 [info ] [MainThread]: Using profiles dir at C:\Users\thesy\Desktop\duckdb_dbt_poc\duckdb_dbt_scd1_poc\dbt_project
+[0m14:49:59.285154 [info ] [MainThread]: Using profiles.yml file at C:\Users\thesy\Desktop\duckdb_dbt_poc\duckdb_dbt_scd1_poc\dbt_project\profiles.yml
+[0m14:49:59.285154 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\thesy\Desktop\duckdb_dbt_poc\duckdb_dbt_scd1_poc\dbt_project\dbt_project.yml
+[0m14:49:59.285154 [info ] [MainThread]: adapter type: duckdb
+[0m14:49:59.285154 [info ] [MainThread]: adapter version: 1.9.4
+[0m14:49:59.380557 [info ] [MainThread]: Configuration:
+[0m14:49:59.380557 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:49:59.381549 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:49:59.381549 [info ] [MainThread]: Required dependencies:
+[0m14:49:59.381549 [debug] [MainThread]: Executing "git --help"
+[0m14:49:59.402788 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:49:59.402788 [debug] [MainThread]: STDERR: "b''"
+[0m14:49:59.402788 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:49:59.403787 [info ] [MainThread]: Connection:
+[0m14:49:59.404135 [info ] [MainThread]:   database: duck_poc
+[0m14:49:59.404453 [info ] [MainThread]:   schema: main
+[0m14:49:59.404453 [info ] [MainThread]:   path: duck_poc.duckdb
+[0m14:49:59.404453 [info ] [MainThread]:   config_options: None
+[0m14:49:59.404453 [info ] [MainThread]:   extensions: None
+[0m14:49:59.405526 [info ] [MainThread]:   settings: {}
+[0m14:49:59.405526 [info ] [MainThread]:   external_root: .
+[0m14:49:59.405526 [info ] [MainThread]:   use_credential_provider: None
+[0m14:49:59.405526 [info ] [MainThread]:   attach: None
+[0m14:49:59.405526 [info ] [MainThread]:   filesystems: None
+[0m14:49:59.406525 [info ] [MainThread]:   remote: None
+[0m14:49:59.406525 [info ] [MainThread]:   plugins: None
+[0m14:49:59.406525 [info ] [MainThread]:   disable_transactions: False
+[0m14:49:59.407526 [info ] [MainThread]: Registered adapter: duckdb=1.9.4
+[0m14:49:59.533379 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m14:49:59.570176 [debug] [MainThread]: Using duckdb connection "debug"
+[0m14:49:59.570176 [debug] [MainThread]: On debug: select 1 as id
+[0m14:49:59.570176 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:49:59.579650 [debug] [MainThread]: SQL status: OK in 0.011 seconds
+[0m14:49:59.582043 [debug] [MainThread]: On debug: Close
+[0m14:49:59.582043 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:49:59.582043 [info ] [MainThread]: [32mAll checks passed![0m
+[0m14:49:59.582043 [debug] [MainThread]: Command `dbt debug` succeeded at 14:49:59.582043 after 0.48 seconds
+[0m14:49:59.582043 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:49:59.582043 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244B9E76990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244BB9A1E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244BB9FBE90>]}
+[0m14:49:59.582043 [debug] [MainThread]: Flushing usage events
+[0m14:49:59.724577 [debug] [MainThread]: An error was encountered while trying to flush usage events
