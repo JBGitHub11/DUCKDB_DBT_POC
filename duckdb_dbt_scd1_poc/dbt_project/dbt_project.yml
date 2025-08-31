@@ -1,0 +1,18 @@
+name: duckdb_dbt_scd1_poc
+version: 1.0.0
+config-version: 2
+
+profile: duckdb_dbt_scd1_poc
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+
+models:
+  duckdb_dbt_scd1_poc:
+    +materialized: table
+    d1_clean:
+      +tags: ["d1"]
+    d2_transform:
+      +tags: ["d2"]
+    d3_present:
+      +tags: ["d3","hourly"]
