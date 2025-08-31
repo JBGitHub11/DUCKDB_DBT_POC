@@ -1,0 +1,487 @@
+[0m14:06:05.063047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002150BD36480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002150AEA7170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002150E613860>]}
+
+
+============================== 14:06:05.066046 | 79022602-9a29-4b0b-ab92-66b1ab074c54 ==============================
+[0m14:06:05.066046 [info ] [MainThread]: Running with dbt=1.10.10
+[0m14:06:05.067047 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\thesy\\Desktop\\duckdb_dbt_poc\\duckdb_dbt_poc\\dbt_project\\logs', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': 'C:\\Users\\thesy\\.dbt'}
+[0m14:06:05.078722 [info ] [MainThread]: dbt version: 1.10.10
+[0m14:06:05.079722 [info ] [MainThread]: python version: 3.12.9
+[0m14:06:05.079722 [info ] [MainThread]: python path: C:\Users\thesy\.conda\envs\TheAlamo\python.exe
+[0m14:06:05.079722 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m14:06:05.079722 [info ] [MainThread]: Using profiles dir at C:\Users\thesy\.dbt
+[0m14:06:05.080722 [info ] [MainThread]: Using profiles.yml file at C:\Users\thesy\.dbt\profiles.yml
+[0m14:06:05.080722 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\thesy\Desktop\duckdb_dbt_poc\duckdb_dbt_poc\dbt_project\dbt_project.yml
+[0m14:06:05.166604 [info ] [MainThread]: Configuration:
+[0m14:06:05.167601 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m14:06:05.167601 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:06:05.167601 [info ] [MainThread]: Required dependencies:
+[0m14:06:05.168661 [debug] [MainThread]: Executing "git --help"
+[0m14:06:05.190744 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:06:05.190744 [debug] [MainThread]: STDERR: "b''"
+[0m14:06:05.191746 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:06:05.191746 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m14:06:05.191746 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:06:05.192745 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\thesy\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m14:06:05.192745 [debug] [MainThread]: Command `dbt debug` failed at 14:06:05.192745 after 0.20 seconds
+[0m14:06:05.193744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002150EB7D580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002150E613860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215102C3CB0>]}
+[0m14:06:05.193744 [debug] [MainThread]: Flushing usage events
+[0m14:06:05.362190 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:07:42.979527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C824279E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C827DB1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C83F10E90>]}
+
+
+============================== 14:07:42.982637 | 8c1c4552-e472-45be-99b5-f06a450d6d52 ==============================
+[0m14:07:42.982637 [info ] [MainThread]: Running with dbt=1.10.10
+[0m14:07:42.983642 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\thesy\\Desktop\\duckdb_dbt_poc\\duckdb_dbt_poc\\dbt_project', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\thesy\\Desktop\\duckdb_dbt_poc\\duckdb_dbt_poc\\dbt_project\\logs', 'write_json': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m14:07:42.994641 [info ] [MainThread]: dbt version: 1.10.10
+[0m14:07:42.995641 [info ] [MainThread]: python version: 3.12.9
+[0m14:07:42.995641 [info ] [MainThread]: python path: C:\Users\thesy\.conda\envs\TheAlamo\python.exe
+[0m14:07:42.996209 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m14:07:43.063027 [info ] [MainThread]: Using profiles dir at C:\Users\thesy\Desktop\duckdb_dbt_poc\duckdb_dbt_poc\dbt_project
+[0m14:07:43.064027 [info ] [MainThread]: Using profiles.yml file at C:\Users\thesy\Desktop\duckdb_dbt_poc\duckdb_dbt_poc\dbt_project\profiles.yml
+[0m14:07:43.064027 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\thesy\Desktop\duckdb_dbt_poc\duckdb_dbt_poc\dbt_project\dbt_project.yml
+[0m14:07:43.066028 [info ] [MainThread]: adapter type: duckdb
+[0m14:07:43.066028 [info ] [MainThread]: adapter version: 1.9.4
+[0m14:07:43.149377 [info ] [MainThread]: Configuration:
+[0m14:07:43.149377 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:07:43.149377 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:07:43.149377 [info ] [MainThread]: Required dependencies:
+[0m14:07:43.149377 [debug] [MainThread]: Executing "git --help"
+[0m14:07:43.176318 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:07:43.176318 [debug] [MainThread]: STDERR: "b''"
+[0m14:07:43.177318 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:07:43.177318 [info ] [MainThread]: Connection:
+[0m14:07:43.177318 [info ] [MainThread]:   database: duck_poc
+[0m14:07:43.178317 [info ] [MainThread]:   schema: main
+[0m14:07:43.178317 [info ] [MainThread]:   path: duck_poc.duckdb
+[0m14:07:43.178317 [info ] [MainThread]:   config_options: None
+[0m14:07:43.178317 [info ] [MainThread]:   extensions: None
+[0m14:07:43.179318 [info ] [MainThread]:   settings: {}
+[0m14:07:43.179318 [info ] [MainThread]:   external_root: .
+[0m14:07:43.179318 [info ] [MainThread]:   use_credential_provider: None
+[0m14:07:43.179318 [info ] [MainThread]:   attach: None
+[0m14:07:43.179318 [info ] [MainThread]:   filesystems: None
+[0m14:07:43.180317 [info ] [MainThread]:   remote: None
+[0m14:07:43.180317 [info ] [MainThread]:   plugins: None
+[0m14:07:43.180317 [info ] [MainThread]:   disable_transactions: False
+[0m14:07:43.180317 [info ] [MainThread]: Registered adapter: duckdb=1.9.4
+[0m14:07:43.331034 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m14:07:44.729609 [debug] [MainThread]: Using duckdb connection "debug"
+[0m14:07:44.729609 [debug] [MainThread]: On debug: select 1 as id
+[0m14:07:44.729609 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:07:44.744800 [debug] [MainThread]: SQL status: OK in 0.012 seconds
+[0m14:07:44.745793 [debug] [MainThread]: On debug: Close
+[0m14:07:44.745793 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:07:44.745793 [info ] [MainThread]: [32mAll checks passed![0m
+[0m14:07:44.745793 [debug] [MainThread]: Command `dbt debug` succeeded at 14:07:44.745793 after 1.85 seconds
+[0m14:07:44.745793 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:07:44.745793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C82B91100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C8439E390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C84411010>]}
+[0m14:07:44.745793 [debug] [MainThread]: Flushing usage events
+[0m14:07:44.882678 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:08:18.536361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A64A8F3260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A64D719040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A64D71ACF0>]}
+
+
+============================== 14:08:18.539362 | 77c704d6-dbc3-42d6-b824-70153316e3fe ==============================
+[0m14:08:18.539362 [info ] [MainThread]: Running with dbt=1.10.10
+[0m14:08:18.540362 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt run', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'printer_width': '80', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\thesy\\Desktop\\duckdb_dbt_poc\\duckdb_dbt_poc\\dbt_project\\logs', 'profiles_dir': 'C:\\Users\\thesy\\Desktop\\duckdb_dbt_poc\\duckdb_dbt_poc\\dbt_project', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m14:08:18.817905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '77c704d6-dbc3-42d6-b824-70153316e3fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A64D0E88F0>]}
+[0m14:08:18.871090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '77c704d6-dbc3-42d6-b824-70153316e3fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A64EFA59A0>]}
+[0m14:08:18.873812 [info ] [MainThread]: Registered adapter: duckdb=1.9.4
+[0m14:08:19.017848 [debug] [MainThread]: checksum: 502a0dc23e9052e1ae09f7c44ee219ef7a02dfea7e7d66580d54c304c14d553b, vars: {}, profile: , target: , version: 1.10.10
+[0m14:08:19.017848 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:08:19.018849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '77c704d6-dbc3-42d6-b824-70153316e3fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A64EFA51F0>]}
+[0m14:08:20.307523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '77c704d6-dbc3-42d6-b824-70153316e3fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A64F828CE0>]}
+[0m14:08:20.353118 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\thesy\Desktop\duckdb_dbt_poc\duckdb_dbt_poc\dbt_project\target\manifest.json
+[0m14:08:20.364828 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\thesy\Desktop\duckdb_dbt_poc\duckdb_dbt_poc\dbt_project\target\semantic_manifest.json
+[0m14:08:20.380079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '77c704d6-dbc3-42d6-b824-70153316e3fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A64F87A360>]}
+[0m14:08:20.381079 [info ] [MainThread]: Found 5 models, 15 data tests, 429 macros
+[0m14:08:20.381079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '77c704d6-dbc3-42d6-b824-70153316e3fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A64F8E7350>]}
+[0m14:08:20.383079 [info ] [MainThread]: 
+[0m14:08:20.383079 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:08:20.383079 [info ] [MainThread]: 
+[0m14:08:20.384079 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:08:20.387078 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_duck_poc'
+[0m14:08:20.432736 [debug] [ThreadPool]: Using duckdb connection "list_duck_poc"
+[0m14:08:20.432736 [debug] [ThreadPool]: On list_duck_poc: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "duckdb_poc", "target_name": "dev", "connection_name": "list_duck_poc"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"duck_poc"'
+    
+  
+  
+[0m14:08:20.432736 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:08:20.448633 [debug] [ThreadPool]: SQL status: OK in 0.016 seconds
+[0m14:08:20.449891 [debug] [ThreadPool]: On list_duck_poc: Close
+[0m14:08:20.450890 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_duck_poc, now create_duck_poc_main)
+[0m14:08:20.450890 [debug] [ThreadPool]: Creating schema "database: "duck_poc"
+schema: "main"
+"
+[0m14:08:20.455890 [debug] [ThreadPool]: Using duckdb connection "create_duck_poc_main"
+[0m14:08:20.455890 [debug] [ThreadPool]: On create_duck_poc_main: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "duckdb_poc", "target_name": "dev", "connection_name": "create_duck_poc_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='duck_poc'
+        and type='sqlite'
+    
+  
+[0m14:08:20.455890 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:08:20.456890 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:08:20.457892 [debug] [ThreadPool]: Using duckdb connection "create_duck_poc_main"
+[0m14:08:20.457892 [debug] [ThreadPool]: On create_duck_poc_main: BEGIN
+[0m14:08:20.457892 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:08:20.458891 [debug] [ThreadPool]: Using duckdb connection "create_duck_poc_main"
+[0m14:08:20.458891 [debug] [ThreadPool]: On create_duck_poc_main: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "duckdb_poc", "target_name": "dev", "connection_name": "create_duck_poc_main"} */
+
+    
+    
+        create schema if not exists "duck_poc"."main"
+    
+[0m14:08:20.458891 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:08:20.459891 [debug] [ThreadPool]: On create_duck_poc_main: COMMIT
+[0m14:08:20.459891 [debug] [ThreadPool]: Using duckdb connection "create_duck_poc_main"
+[0m14:08:20.459891 [debug] [ThreadPool]: On create_duck_poc_main: COMMIT
+[0m14:08:20.459891 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:08:20.459891 [debug] [ThreadPool]: On create_duck_poc_main: Close
+[0m14:08:20.460891 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_duck_poc_main'
+[0m14:08:20.464889 [debug] [ThreadPool]: Using duckdb connection "list_duck_poc_main"
+[0m14:08:20.464889 [debug] [ThreadPool]: On list_duck_poc_main: BEGIN
+[0m14:08:20.465659 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:08:20.465659 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:08:20.465659 [debug] [ThreadPool]: Using duckdb connection "list_duck_poc_main"
+[0m14:08:20.466314 [debug] [ThreadPool]: On list_duck_poc_main: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "duckdb_poc", "target_name": "dev", "connection_name": "list_duck_poc_main"} */
+select
+      'duck_poc' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'duck_poc'
+  
+[0m14:08:20.472317 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m14:08:20.473811 [debug] [ThreadPool]: On list_duck_poc_main: ROLLBACK
+[0m14:08:20.474115 [debug] [ThreadPool]: Failed to rollback 'list_duck_poc_main'
+[0m14:08:20.474115 [debug] [ThreadPool]: On list_duck_poc_main: Close
+[0m14:08:20.475176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '77c704d6-dbc3-42d6-b824-70153316e3fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A64F9004A0>]}
+[0m14:08:20.475176 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:08:20.475176 [debug] [MainThread]: On master: BEGIN
+[0m14:08:20.475176 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:08:20.476177 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:08:20.476177 [debug] [MainThread]: On master: COMMIT
+[0m14:08:20.476177 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:08:20.476177 [debug] [MainThread]: On master: COMMIT
+[0m14:08:20.477177 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:08:20.477177 [debug] [MainThread]: On master: Close
+[0m14:08:20.479782 [debug] [Thread-1 (]: Began running node model.duckdb_poc.customers_d1
+[0m14:08:20.479782 [debug] [Thread-2 (]: Began running node model.duckdb_poc.sales_d1
+[0m14:08:20.480782 [info ] [Thread-1 (]: 1 of 5 START sql table model main.customers_d1 ................................. [RUN]
+[0m14:08:20.480782 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.duckdb_poc.customers_d1'
+[0m14:08:20.481783 [debug] [Thread-1 (]: Began compiling node model.duckdb_poc.customers_d1
+[0m14:08:20.480782 [info ] [Thread-2 (]: 2 of 5 START sql table model main.sales_d1 ..................................... [RUN]
+[0m14:08:20.486322 [debug] [Thread-1 (]: Writing injected SQL for node "model.duckdb_poc.customers_d1"
+[0m14:08:20.486322 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.duckdb_poc.sales_d1'
+[0m14:08:20.486322 [debug] [Thread-2 (]: Began compiling node model.duckdb_poc.sales_d1
+[0m14:08:20.488328 [debug] [Thread-2 (]: Writing injected SQL for node "model.duckdb_poc.sales_d1"
+[0m14:08:20.490339 [debug] [Thread-2 (]: Began executing node model.duckdb_poc.sales_d1
+[0m14:08:20.505714 [debug] [Thread-1 (]: Began executing node model.duckdb_poc.customers_d1
+[0m14:08:20.511706 [debug] [Thread-2 (]: Writing runtime sql for node "model.duckdb_poc.sales_d1"
+[0m14:08:20.513707 [debug] [Thread-1 (]: Writing runtime sql for node "model.duckdb_poc.customers_d1"
+[0m14:08:20.514424 [debug] [Thread-2 (]: Using duckdb connection "model.duckdb_poc.sales_d1"
+[0m14:08:20.515450 [debug] [Thread-2 (]: On model.duckdb_poc.sales_d1: BEGIN
+[0m14:08:20.515450 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m14:08:20.516449 [debug] [Thread-1 (]: Using duckdb connection "model.duckdb_poc.customers_d1"
+[0m14:08:20.516449 [debug] [Thread-1 (]: On model.duckdb_poc.customers_d1: BEGIN
+[0m14:08:20.516449 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m14:08:20.516449 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m14:08:20.517467 [debug] [Thread-2 (]: Using duckdb connection "model.duckdb_poc.sales_d1"
+[0m14:08:20.517467 [debug] [Thread-2 (]: On model.duckdb_poc.sales_d1: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "duckdb_poc", "target_name": "dev", "node_id": "model.duckdb_poc.sales_d1"} */
+
+  
+    
+    
+
+    create  table
+      "duck_poc"."main"."sales_d1__dbt_tmp"
+  
+    as (
+      
+-- Treat CSVs under /data as your D0 snapshots
+select
+  cast(sales_id as integer) as sales_id,
+  customer_id,
+  cast(amount as double) as amount,
+  currency_code,
+  cast(event_ts as timestamp) as event_ts,
+  cast(load_hour as timestamp) as load_hour
+from read_csv_auto('../data/sales_2025-08-31-10.csv', header=True)
+    );
+  
+  
+[0m14:08:20.517467 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:08:20.517467 [debug] [Thread-1 (]: Using duckdb connection "model.duckdb_poc.customers_d1"
+[0m14:08:20.518448 [debug] [Thread-1 (]: On model.duckdb_poc.customers_d1: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "duckdb_poc", "target_name": "dev", "node_id": "model.duckdb_poc.customers_d1"} */
+
+  
+    
+    
+
+    create  table
+      "duck_poc"."main"."customers_d1__dbt_tmp"
+  
+    as (
+      
+select
+  customer_id,
+  upper(trim(customer_name)) as customer_name,
+  email,
+  region_code,
+  cast(load_hour as timestamp) as load_hour
+from read_csv_auto('../data/customers_2025-08-31-10.csv', header=True)
+    );
+  
+  
+[0m14:08:20.522448 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m14:08:20.527455 [debug] [Thread-1 (]: Using duckdb connection "model.duckdb_poc.customers_d1"
+[0m14:08:20.527455 [debug] [Thread-2 (]: SQL status: OK in 0.010 seconds
+[0m14:08:20.527455 [debug] [Thread-1 (]: On model.duckdb_poc.customers_d1: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "duckdb_poc", "target_name": "dev", "node_id": "model.duckdb_poc.customers_d1"} */
+alter table "duck_poc"."main"."customers_d1__dbt_tmp" rename to "customers_d1"
+[0m14:08:20.529447 [debug] [Thread-2 (]: Using duckdb connection "model.duckdb_poc.sales_d1"
+[0m14:08:20.529447 [debug] [Thread-2 (]: On model.duckdb_poc.sales_d1: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "duckdb_poc", "target_name": "dev", "node_id": "model.duckdb_poc.sales_d1"} */
+alter table "duck_poc"."main"."sales_d1__dbt_tmp" rename to "sales_d1"
+[0m14:08:20.530448 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:08:20.537455 [debug] [Thread-2 (]: SQL status: OK in 0.007 seconds
+[0m14:08:20.538950 [debug] [Thread-1 (]: On model.duckdb_poc.customers_d1: COMMIT
+[0m14:08:20.539952 [debug] [Thread-2 (]: On model.duckdb_poc.sales_d1: COMMIT
+[0m14:08:20.539952 [debug] [Thread-1 (]: Using duckdb connection "model.duckdb_poc.customers_d1"
+[0m14:08:20.539952 [debug] [Thread-2 (]: Using duckdb connection "model.duckdb_poc.sales_d1"
+[0m14:08:20.540953 [debug] [Thread-1 (]: On model.duckdb_poc.customers_d1: COMMIT
+[0m14:08:20.540953 [debug] [Thread-2 (]: On model.duckdb_poc.sales_d1: COMMIT
+[0m14:08:20.542954 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m14:08:20.546959 [debug] [Thread-1 (]: Using duckdb connection "model.duckdb_poc.customers_d1"
+[0m14:08:20.546959 [debug] [Thread-1 (]: On model.duckdb_poc.customers_d1: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "duckdb_poc", "target_name": "dev", "node_id": "model.duckdb_poc.customers_d1"} */
+
+      drop table if exists "duck_poc"."main"."customers_d1__dbt_backup" cascade
+    
+[0m14:08:20.546959 [debug] [Thread-2 (]: SQL status: OK in 0.006 seconds
+[0m14:08:20.548771 [debug] [Thread-2 (]: Using duckdb connection "model.duckdb_poc.sales_d1"
+[0m14:08:20.548771 [debug] [Thread-2 (]: On model.duckdb_poc.sales_d1: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "duckdb_poc", "target_name": "dev", "node_id": "model.duckdb_poc.sales_d1"} */
+
+      drop table if exists "duck_poc"."main"."sales_d1__dbt_backup" cascade
+    
+[0m14:08:20.549814 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m14:08:20.550963 [debug] [Thread-1 (]: On model.duckdb_poc.customers_d1: Close
+[0m14:08:20.550963 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m14:08:20.552971 [debug] [Thread-2 (]: On model.duckdb_poc.sales_d1: Close
+[0m14:08:20.552971 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '77c704d6-dbc3-42d6-b824-70153316e3fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A64F7F9C10>]}
+[0m14:08:20.553970 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '77c704d6-dbc3-42d6-b824-70153316e3fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A64FD89D60>]}
+[0m14:08:20.553970 [info ] [Thread-1 (]: 1 of 5 OK created sql table model main.customers_d1 ............................ [[32mOK[0m in 0.07s]
+[0m14:08:20.554964 [debug] [Thread-1 (]: Finished running node model.duckdb_poc.customers_d1
+[0m14:08:20.553970 [info ] [Thread-2 (]: 2 of 5 OK created sql table model main.sales_d1 ................................ [[32mOK[0m in 0.07s]
+[0m14:08:20.554964 [debug] [Thread-2 (]: Finished running node model.duckdb_poc.sales_d1
+[0m14:08:20.555963 [debug] [Thread-4 (]: Began running node model.duckdb_poc.dim_customer
+[0m14:08:20.555963 [debug] [Thread-1 (]: Began running node model.duckdb_poc.fct_sales
+[0m14:08:20.555963 [info ] [Thread-4 (]: 3 of 5 START sql table model main.dim_customer ................................. [RUN]
+[0m14:08:20.556964 [info ] [Thread-1 (]: 4 of 5 START sql table model main.fct_sales .................................... [RUN]
+[0m14:08:20.556964 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.duckdb_poc.dim_customer'
+[0m14:08:20.556964 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.duckdb_poc.customers_d1, now model.duckdb_poc.fct_sales)
+[0m14:08:20.556964 [debug] [Thread-4 (]: Began compiling node model.duckdb_poc.dim_customer
+[0m14:08:20.556964 [debug] [Thread-1 (]: Began compiling node model.duckdb_poc.fct_sales
+[0m14:08:20.559264 [debug] [Thread-4 (]: Writing injected SQL for node "model.duckdb_poc.dim_customer"
+[0m14:08:20.561263 [debug] [Thread-1 (]: Writing injected SQL for node "model.duckdb_poc.fct_sales"
+[0m14:08:20.562256 [debug] [Thread-4 (]: Began executing node model.duckdb_poc.dim_customer
+[0m14:08:20.564256 [debug] [Thread-4 (]: Writing runtime sql for node "model.duckdb_poc.dim_customer"
+[0m14:08:20.564256 [debug] [Thread-1 (]: Began executing node model.duckdb_poc.fct_sales
+[0m14:08:20.566647 [debug] [Thread-1 (]: Writing runtime sql for node "model.duckdb_poc.fct_sales"
+[0m14:08:20.567647 [debug] [Thread-1 (]: Using duckdb connection "model.duckdb_poc.fct_sales"
+[0m14:08:20.567647 [debug] [Thread-1 (]: On model.duckdb_poc.fct_sales: BEGIN
+[0m14:08:20.567647 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:08:20.567647 [debug] [Thread-4 (]: Using duckdb connection "model.duckdb_poc.dim_customer"
+[0m14:08:20.568648 [debug] [Thread-4 (]: On model.duckdb_poc.dim_customer: BEGIN
+[0m14:08:20.568648 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m14:08:20.568648 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:08:20.569647 [debug] [Thread-1 (]: Using duckdb connection "model.duckdb_poc.fct_sales"
+[0m14:08:20.569647 [debug] [Thread-1 (]: On model.duckdb_poc.fct_sales: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "duckdb_poc", "target_name": "dev", "node_id": "model.duckdb_poc.fct_sales"} */
+
+  
+    
+    
+
+    create  table
+      "duck_poc"."main"."fct_sales__dbt_tmp"
+  
+    as (
+      
+select
+  sales_id,
+  event_ts as sale_ts,
+  amount,
+  currency_code,
+  customer_id
+from "duck_poc"."main"."sales_d1"
+    );
+  
+  
+[0m14:08:20.569647 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m14:08:20.569647 [debug] [Thread-4 (]: Using duckdb connection "model.duckdb_poc.dim_customer"
+[0m14:08:20.570646 [debug] [Thread-4 (]: On model.duckdb_poc.dim_customer: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "duckdb_poc", "target_name": "dev", "node_id": "model.duckdb_poc.dim_customer"} */
+
+  
+    
+    
+
+    create  table
+      "duck_poc"."main"."dim_customer__dbt_tmp"
+  
+    as (
+      
+select
+  customer_id,
+  any_value(customer_name) as customer_name,
+  any_value(email) as email,
+  any_value(region_code) as region_code
+from "duck_poc"."main"."customers_d1"
+group by customer_id
+    );
+  
+  
+[0m14:08:20.570646 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:08:20.573646 [debug] [Thread-1 (]: Using duckdb connection "model.duckdb_poc.fct_sales"
+[0m14:08:20.573646 [debug] [Thread-1 (]: On model.duckdb_poc.fct_sales: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "duckdb_poc", "target_name": "dev", "node_id": "model.duckdb_poc.fct_sales"} */
+alter table "duck_poc"."main"."fct_sales__dbt_tmp" rename to "fct_sales"
+[0m14:08:20.573646 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m14:08:20.575847 [debug] [Thread-4 (]: Using duckdb connection "model.duckdb_poc.dim_customer"
+[0m14:08:20.575847 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m14:08:20.576854 [debug] [Thread-4 (]: On model.duckdb_poc.dim_customer: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "duckdb_poc", "target_name": "dev", "node_id": "model.duckdb_poc.dim_customer"} */
+alter table "duck_poc"."main"."dim_customer__dbt_tmp" rename to "dim_customer"
+[0m14:08:20.577847 [debug] [Thread-1 (]: On model.duckdb_poc.fct_sales: COMMIT
+[0m14:08:20.577847 [debug] [Thread-1 (]: Using duckdb connection "model.duckdb_poc.fct_sales"
+[0m14:08:20.577847 [debug] [Thread-1 (]: On model.duckdb_poc.fct_sales: COMMIT
+[0m14:08:20.578849 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m14:08:20.579848 [debug] [Thread-4 (]: On model.duckdb_poc.dim_customer: COMMIT
+[0m14:08:20.579848 [debug] [Thread-4 (]: Using duckdb connection "model.duckdb_poc.dim_customer"
+[0m14:08:20.579848 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:08:20.579848 [debug] [Thread-4 (]: On model.duckdb_poc.dim_customer: COMMIT
+[0m14:08:20.581848 [debug] [Thread-1 (]: Using duckdb connection "model.duckdb_poc.fct_sales"
+[0m14:08:20.581848 [debug] [Thread-1 (]: On model.duckdb_poc.fct_sales: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "duckdb_poc", "target_name": "dev", "node_id": "model.duckdb_poc.fct_sales"} */
+
+      drop table if exists "duck_poc"."main"."fct_sales__dbt_backup" cascade
+    
+[0m14:08:20.582849 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m14:08:20.584848 [debug] [Thread-4 (]: Using duckdb connection "model.duckdb_poc.dim_customer"
+[0m14:08:20.584848 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m14:08:20.585848 [debug] [Thread-4 (]: On model.duckdb_poc.dim_customer: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "duckdb_poc", "target_name": "dev", "node_id": "model.duckdb_poc.dim_customer"} */
+
+      drop table if exists "duck_poc"."main"."dim_customer__dbt_backup" cascade
+    
+[0m14:08:20.585848 [debug] [Thread-1 (]: On model.duckdb_poc.fct_sales: Close
+[0m14:08:20.586849 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '77c704d6-dbc3-42d6-b824-70153316e3fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A64FD889E0>]}
+[0m14:08:20.586849 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m14:08:20.586849 [info ] [Thread-1 (]: 4 of 5 OK created sql table model main.fct_sales ............................... [[32mOK[0m in 0.03s]
+[0m14:08:20.587849 [debug] [Thread-4 (]: On model.duckdb_poc.dim_customer: Close
+[0m14:08:20.588848 [debug] [Thread-1 (]: Finished running node model.duckdb_poc.fct_sales
+[0m14:08:20.588848 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '77c704d6-dbc3-42d6-b824-70153316e3fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A64FD88B60>]}
+[0m14:08:20.589847 [info ] [Thread-4 (]: 3 of 5 OK created sql table model main.dim_customer ............................ [[32mOK[0m in 0.03s]
+[0m14:08:20.589847 [debug] [Thread-4 (]: Finished running node model.duckdb_poc.dim_customer
+[0m14:08:20.589847 [debug] [Thread-3 (]: Began running node model.duckdb_poc.sales_with_customer
+[0m14:08:20.590849 [info ] [Thread-3 (]: 5 of 5 START sql table model main.sales_with_customer .......................... [RUN]
+[0m14:08:20.590849 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.duckdb_poc.sales_with_customer'
+[0m14:08:20.591849 [debug] [Thread-3 (]: Began compiling node model.duckdb_poc.sales_with_customer
+[0m14:08:20.593847 [debug] [Thread-3 (]: Writing injected SQL for node "model.duckdb_poc.sales_with_customer"
+[0m14:08:20.593847 [debug] [Thread-3 (]: Began executing node model.duckdb_poc.sales_with_customer
+[0m14:08:20.596847 [debug] [Thread-3 (]: Writing runtime sql for node "model.duckdb_poc.sales_with_customer"
+[0m14:08:20.597847 [debug] [Thread-3 (]: Using duckdb connection "model.duckdb_poc.sales_with_customer"
+[0m14:08:20.597847 [debug] [Thread-3 (]: On model.duckdb_poc.sales_with_customer: BEGIN
+[0m14:08:20.598848 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m14:08:20.598848 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m14:08:20.598848 [debug] [Thread-3 (]: Using duckdb connection "model.duckdb_poc.sales_with_customer"
+[0m14:08:20.598848 [debug] [Thread-3 (]: On model.duckdb_poc.sales_with_customer: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "duckdb_poc", "target_name": "dev", "node_id": "model.duckdb_poc.sales_with_customer"} */
+
+  
+    
+    
+
+    create  table
+      "duck_poc"."main"."sales_with_customer__dbt_tmp"
+  
+    as (
+      
+select
+  f.sales_id,
+  f.sale_ts,
+  f.amount,
+  f.currency_code,
+  c.customer_id,
+  c.customer_name,
+  c.email,
+  c.region_code
+from "duck_poc"."main"."fct_sales" f
+join "duck_poc"."main"."dim_customer" c
+  on c.customer_id = f.customer_id
+    );
+  
+  
+[0m14:08:20.600923 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m14:08:20.602930 [debug] [Thread-3 (]: Using duckdb connection "model.duckdb_poc.sales_with_customer"
+[0m14:08:20.602930 [debug] [Thread-3 (]: On model.duckdb_poc.sales_with_customer: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "duckdb_poc", "target_name": "dev", "node_id": "model.duckdb_poc.sales_with_customer"} */
+alter table "duck_poc"."main"."sales_with_customer__dbt_tmp" rename to "sales_with_customer"
+[0m14:08:20.602930 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m14:08:20.603922 [debug] [Thread-3 (]: On model.duckdb_poc.sales_with_customer: COMMIT
+[0m14:08:20.604922 [debug] [Thread-3 (]: Using duckdb connection "model.duckdb_poc.sales_with_customer"
+[0m14:08:20.604922 [debug] [Thread-3 (]: On model.duckdb_poc.sales_with_customer: COMMIT
+[0m14:08:20.605922 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m14:08:20.606922 [debug] [Thread-3 (]: Using duckdb connection "model.duckdb_poc.sales_with_customer"
+[0m14:08:20.606922 [debug] [Thread-3 (]: On model.duckdb_poc.sales_with_customer: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "duckdb_poc", "target_name": "dev", "node_id": "model.duckdb_poc.sales_with_customer"} */
+
+      drop table if exists "duck_poc"."main"."sales_with_customer__dbt_backup" cascade
+    
+[0m14:08:20.607922 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m14:08:20.607922 [debug] [Thread-3 (]: On model.duckdb_poc.sales_with_customer: Close
+[0m14:08:20.608925 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '77c704d6-dbc3-42d6-b824-70153316e3fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A64F82FC50>]}
+[0m14:08:20.608925 [info ] [Thread-3 (]: 5 of 5 OK created sql table model main.sales_with_customer ..................... [[32mOK[0m in 0.02s]
+[0m14:08:20.609925 [debug] [Thread-3 (]: Finished running node model.duckdb_poc.sales_with_customer
+[0m14:08:20.609925 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:08:20.610922 [debug] [MainThread]: On master: BEGIN
+[0m14:08:20.610922 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:08:20.610922 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:08:20.610922 [debug] [MainThread]: On master: COMMIT
+[0m14:08:20.611922 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:08:20.611922 [debug] [MainThread]: On master: COMMIT
+[0m14:08:20.611922 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:08:20.611922 [debug] [MainThread]: On master: Close
+[0m14:08:20.612924 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:08:20.612924 [debug] [MainThread]: Connection 'create_duck_poc_main' was properly closed.
+[0m14:08:20.612924 [debug] [MainThread]: Connection 'list_duck_poc_main' was properly closed.
+[0m14:08:20.612924 [debug] [MainThread]: Connection 'model.duckdb_poc.fct_sales' was properly closed.
+[0m14:08:20.612924 [debug] [MainThread]: Connection 'model.duckdb_poc.sales_d1' was properly closed.
+[0m14:08:20.612924 [debug] [MainThread]: Connection 'model.duckdb_poc.dim_customer' was properly closed.
+[0m14:08:20.612924 [debug] [MainThread]: Connection 'model.duckdb_poc.sales_with_customer' was properly closed.
+[0m14:08:20.613930 [info ] [MainThread]: 
+[0m14:08:20.614180 [info ] [MainThread]: Finished running 5 table models in 0 hours 0 minutes and 0.23 seconds (0.23s).
+[0m14:08:20.615191 [debug] [MainThread]: Command end result
+[0m14:08:20.628190 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\thesy\Desktop\duckdb_dbt_poc\duckdb_dbt_poc\dbt_project\target\manifest.json
+[0m14:08:20.629190 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\thesy\Desktop\duckdb_dbt_poc\duckdb_dbt_poc\dbt_project\target\semantic_manifest.json
+[0m14:08:20.634190 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\thesy\Desktop\duckdb_dbt_poc\duckdb_dbt_poc\dbt_project\target\run_results.json
+[0m14:08:20.634190 [info ] [MainThread]: 
+[0m14:08:20.634190 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:08:20.634190 [info ] [MainThread]: 
+[0m14:08:20.635190 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=5
+[0m14:08:20.635190 [debug] [MainThread]: Command `dbt run` succeeded at 14:08:20.635190 after 2.19 seconds
+[0m14:08:20.636189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A64DBB2D20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A64D7191C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A64D718320>]}
+[0m14:08:20.636189 [debug] [MainThread]: Flushing usage events
+[0m14:08:20.805085 [debug] [MainThread]: An error was encountered while trying to flush usage events

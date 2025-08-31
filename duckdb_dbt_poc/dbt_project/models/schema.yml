@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: customers_d1
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+      - name: customer_name
+        tests:
+          - not_null
+      - name: email
+        tests:
+          - not_null
+  - name: sales_d1
+    columns:
+      - name: sales_id
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        tests:
+          - not_null
+      - name: event_ts
+        tests:
+          - not_null
+  - name: dim_customer
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+  - name: fct_sales
+    columns:
+      - name: sales_id
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_customer')
+                field: customer_id
+  - name: sales_with_customer
+    columns:
+      - name: sales_id
+        tests:
+          - not_null
